@@ -57,10 +57,10 @@
     }
 
 }
-h2{
-    padding-top: 20px;
+/* h2{
+    padding-top: 100px;
     padding-left: 10%;
-}
+} */
 .sec{
     background-color: rgb(46, 165, 83);
      /* background-image: url(bgcolor.png);  */
@@ -107,10 +107,10 @@ h2{
     opacity: 1;
     background-position-x: 400px;
 }
-p{
+/* p{
     margin-bottom: 0px;
     padding: 0 10%;
-}
+} */
 /* .sec::before{
     content: "";
     background: url('img2.jpg') no-repeat center;
@@ -126,12 +126,32 @@ p{
     
     opacity: 0.5;
 } */
-.image{
-    background: url(bg1.jpg) no-repeat center;
+/* .image{
+    background: url(bg3.jpeg) no-repeat center;
     opacity: 0.5;
     background-size: 90% 95%;
     background-position-y: 10px;
-}
+} */
 .trail{
     background-color: rgb(46, 165, 83);
+} 
+
+.container{
+    max-width: 90%;
 }
+.card{
+    background-color: rgb(46, 165, 83);
+    border: 0;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    /* font-style: italic; */
+}
+
+.row{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
