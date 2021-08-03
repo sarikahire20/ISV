@@ -3,13 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, sans-serif;
+    max-width: 100%;
 }
 .svg{
     position: relative;
     width: 100%;
     height: 100vh;
-    /* opacity: 0.7; */
-    /* background: #399F38; */
 }
 .wave{
     position: absolute;
@@ -21,7 +20,6 @@
     background-size: 1000px 100px;
     animation: animate 4s ease-in-out infinite;
     animation-delay: calc(var(--i) * 0.25s);
-    /* background-blend-mode: overlay; */
     filter: invert(48%) sepia(5%) saturate(4076%) hue-rotate(86deg) brightness(99%) contrast(123%);
 }
 
@@ -57,16 +55,12 @@
     }
 
 }
-/* h2{
-    padding-top: 100px;
+h2{
+    padding-top: 20px;
     padding-left: 10%;
-} */
+}
 .sec{
     background-color: rgb(46, 165, 83);
-     /* background-image: url(bgcolor.png);  */
-     /* background-blend-mode: color;  */
-     /* background-image: url(bg1.jpg);  */
-    /* background-blend-mode: overlay; */
 }
 .waverev{
     position: absolute;
@@ -107,10 +101,105 @@
     opacity: 1;
     background-position-x: 400px;
 }
-/* p{
+p{
     margin-bottom: 0px;
     padding: 0 10%;
+}
+.trail{
+    background-color: rgb(46, 165, 83);
+    height: 50px;
+}
+
+.icons{
+    height: 12vh;
+    width: 12vh;
+}
+.container{
+    max-width: 100%;
+    padding: 0;
+}
+.card{
+    background-color: transparent;
+    /* background-color: rgb(46, 165, 83); */
+    border: 0;
+}
+
+/* trans check fade in */
+
+.elementToFadeInAndOut {
+    right: -300px;
+    animation: fadeinout 4s linear forwards, slide 1s forwards;
+    animation-delay: 200ms;
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes slide {
+    100% { right: 0; }
+}
+
+.row{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.aboutHeading{
+    margin-top: 36%;
+    margin-bottom: 15%;
+}
+
+.revelementToFadeInAndOut {
+    left: -300px;
+    animation: fadeinout 1s linear forwards, slide 0.5s forwards;
+    animation-delay: 50ms;
+}
+
+@keyframes fadeinout {
+    0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+
+
+
+
+
+
+/* Not required */
+
+/* slide in animation */
+
+/* .isvbg{
+    max-height: 50%;
+    max-width: 80%;
+    margin-left: 10%;
+    background-image: url();
 } */
+
+/* .slide {
+    position: absolute; 
+    width: 100px;
+    height: 100px;
+    background: blue; 
+    -webkit-animation: slide 0.5s forwards; 
+     -webkit-animation-delay: 2s; 
+     animation: slide 0.5s forwards;
+} */
+
+/* @-webkit-keyframes slide {
+    100% { left: 0; }
+} */
+
 /* .sec::before{
     content: "";
     background: url('img2.jpg') no-repeat center;
@@ -126,32 +215,10 @@
     
     opacity: 0.5;
 } */
+
 /* .image{
-    background: url(bg3.jpeg) no-repeat center;
+    background: url(bg1.jpg) no-repeat center;
     opacity: 0.5;
     background-size: 90% 95%;
     background-position-y: 10px;
 } */
-.trail{
-    background-color: rgb(46, 165, 83);
-} 
-
-.container{
-    max-width: 90%;
-}
-.card{
-    background-color: rgb(46, 165, 83);
-    border: 0;
-}
-
-h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    /* font-style: italic; */
-}
-
-.row{
-    margin-left: -20px;
-    margin-right: -20px;
-}
-
